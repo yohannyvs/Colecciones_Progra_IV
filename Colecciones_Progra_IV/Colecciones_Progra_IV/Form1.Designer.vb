@@ -53,6 +53,10 @@ Partial Class Form1
         Me.clientecaja2 = New System.Windows.Forms.PictureBox()
         Me.clientepataforma = New System.Windows.Forms.PictureBox()
         Me.m_lbRecievedData = New System.Windows.Forms.ListBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -152,7 +156,7 @@ Partial Class Form1
         Me.CajaPreferencial.BackColor = System.Drawing.Color.Transparent
         Me.CajaPreferencial.BackgroundImage = CType(resources.GetObject("CajaPreferencial.BackgroundImage"), System.Drawing.Image)
         Me.CajaPreferencial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CajaPreferencial.Location = New System.Drawing.Point(1013, 81)
+        Me.CajaPreferencial.Location = New System.Drawing.Point(982, 81)
         Me.CajaPreferencial.Name = "CajaPreferencial"
         Me.CajaPreferencial.Size = New System.Drawing.Size(82, 50)
         Me.CajaPreferencial.TabIndex = 8
@@ -163,7 +167,7 @@ Partial Class Form1
         Me.Caja1.BackColor = System.Drawing.Color.Transparent
         Me.Caja1.BackgroundImage = CType(resources.GetObject("Caja1.BackgroundImage"), System.Drawing.Image)
         Me.Caja1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Caja1.Location = New System.Drawing.Point(1013, 184)
+        Me.Caja1.Location = New System.Drawing.Point(982, 184)
         Me.Caja1.Name = "Caja1"
         Me.Caja1.Size = New System.Drawing.Size(82, 50)
         Me.Caja1.TabIndex = 9
@@ -174,7 +178,7 @@ Partial Class Form1
         Me.Caja2.BackColor = System.Drawing.Color.Transparent
         Me.Caja2.BackgroundImage = CType(resources.GetObject("Caja2.BackgroundImage"), System.Drawing.Image)
         Me.Caja2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Caja2.Location = New System.Drawing.Point(1013, 300)
+        Me.Caja2.Location = New System.Drawing.Point(982, 300)
         Me.Caja2.Name = "Caja2"
         Me.Caja2.Size = New System.Drawing.Size(82, 50)
         Me.Caja2.TabIndex = 10
@@ -185,7 +189,7 @@ Partial Class Form1
         Me.CajaPlataforma.BackColor = System.Drawing.Color.Transparent
         Me.CajaPlataforma.BackgroundImage = CType(resources.GetObject("CajaPlataforma.BackgroundImage"), System.Drawing.Image)
         Me.CajaPlataforma.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CajaPlataforma.Location = New System.Drawing.Point(446, 445)
+        Me.CajaPlataforma.Location = New System.Drawing.Point(657, 439)
         Me.CajaPlataforma.Name = "CajaPlataforma"
         Me.CajaPlataforma.Size = New System.Drawing.Size(82, 50)
         Me.CajaPlataforma.TabIndex = 11
@@ -207,7 +211,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(409, 356)
+        Me.Label2.Location = New System.Drawing.Point(635, 367)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(141, 13)
         Me.Label2.TabIndex = 13
@@ -336,7 +340,7 @@ Partial Class Form1
         'clientecajapreferencia
         '
         Me.clientecajapreferencia.BackColor = System.Drawing.Color.Navy
-        Me.clientecajapreferencia.Location = New System.Drawing.Point(918, 81)
+        Me.clientecajapreferencia.Location = New System.Drawing.Point(901, 81)
         Me.clientecajapreferencia.Name = "clientecajapreferencia"
         Me.clientecajapreferencia.Size = New System.Drawing.Size(58, 50)
         Me.clientecajapreferencia.TabIndex = 17
@@ -345,7 +349,7 @@ Partial Class Form1
         'clientecaja1
         '
         Me.clientecaja1.BackColor = System.Drawing.Color.Navy
-        Me.clientecaja1.Location = New System.Drawing.Point(918, 184)
+        Me.clientecaja1.Location = New System.Drawing.Point(901, 184)
         Me.clientecaja1.Name = "clientecaja1"
         Me.clientecaja1.Size = New System.Drawing.Size(58, 50)
         Me.clientecaja1.TabIndex = 18
@@ -354,7 +358,7 @@ Partial Class Form1
         'clientecaja2
         '
         Me.clientecaja2.BackColor = System.Drawing.Color.Navy
-        Me.clientecaja2.Location = New System.Drawing.Point(918, 300)
+        Me.clientecaja2.Location = New System.Drawing.Point(901, 300)
         Me.clientecaja2.Name = "clientecaja2"
         Me.clientecaja2.Size = New System.Drawing.Size(58, 50)
         Me.clientecaja2.TabIndex = 19
@@ -363,7 +367,7 @@ Partial Class Form1
         'clientepataforma
         '
         Me.clientepataforma.BackColor = System.Drawing.Color.Navy
-        Me.clientepataforma.Location = New System.Drawing.Point(457, 389)
+        Me.clientepataforma.Location = New System.Drawing.Point(667, 383)
         Me.clientepataforma.Name = "clientepataforma"
         Me.clientepataforma.Size = New System.Drawing.Size(58, 50)
         Me.clientepataforma.TabIndex = 20
@@ -377,13 +381,60 @@ Partial Class Form1
         Me.m_lbRecievedData.Size = New System.Drawing.Size(244, 147)
         Me.m_lbRecievedData.TabIndex = 135
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.ForeColor = System.Drawing.Color.Black
+        Me.Label9.Location = New System.Drawing.Point(1058, 99)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(42, 13)
+        Me.Label9.TabIndex = 136
+        Me.Label9.Text = "Caja 1"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.ForeColor = System.Drawing.Color.Black
+        Me.Label10.Location = New System.Drawing.Point(1058, 203)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(42, 13)
+        Me.Label10.TabIndex = 137
+        Me.Label10.Text = "Caja 2"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.ForeColor = System.Drawing.Color.Black
+        Me.Label11.Location = New System.Drawing.Point(1058, 318)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(39, 13)
+        Me.Label11.TabIndex = 138
+        Me.Label11.Text = "Caja3"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Location = New System.Drawing.Point(683, 493)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(42, 13)
+        Me.Label12.TabIndex = 139
+        Me.Label12.Text = "Caja 1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1108, 498)
+        Me.ClientSize = New System.Drawing.Size(1108, 515)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.m_lbRecievedData)
         Me.Controls.Add(Me.clientepataforma)
         Me.Controls.Add(Me.clientecaja2)
@@ -407,6 +458,7 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ForeColor = System.Drawing.Color.Black
         Me.Name = "Form1"
         Me.Text = "Banco de las Americas"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -461,5 +513,9 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Private WithEvents m_lbRecievedData As System.Windows.Forms.ListBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
 
 End Class
