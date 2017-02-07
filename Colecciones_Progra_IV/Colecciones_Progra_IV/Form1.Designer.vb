@@ -39,6 +39,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -50,9 +52,7 @@ Partial Class Form1
         Me.clientecaja1 = New System.Windows.Forms.PictureBox()
         Me.clientecaja2 = New System.Windows.Forms.PictureBox()
         Me.clientepataforma = New System.Windows.Forms.PictureBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.m_lbRecievedData = New System.Windows.Forms.ListBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -237,9 +237,29 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.CBArea)
         Me.GroupBox1.Location = New System.Drawing.Point(14, 32)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(276, 175)
+        Me.GroupBox1.Size = New System.Drawing.Size(279, 175)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(22, 108)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(51, 13)
+        Me.Label8.TabIndex = 7
+        Me.Label8.Text = "Numero"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(131, 108)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(22, 13)
+        Me.Label7.TabIndex = 6
+        Me.Label7.Text = "---"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button1
         '
@@ -296,7 +316,7 @@ Partial Class Form1
         'CBArea
         '
         Me.CBArea.FormattingEnabled = True
-        Me.CBArea.Items.AddRange(New Object() {"Cajas", "Pataforma de Servivios"})
+        Me.CBArea.Items.AddRange(New Object() {"Cajas", "Pataforma de Servicios"})
         Me.CBArea.Location = New System.Drawing.Point(134, 19)
         Me.CBArea.Name = "CBArea"
         Me.CBArea.Size = New System.Drawing.Size(140, 21)
@@ -349,16 +369,6 @@ Partial Class Form1
         Me.clientepataforma.TabIndex = 20
         Me.clientepataforma.TabStop = False
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(131, 108)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(22, 13)
-        Me.Label7.TabIndex = 6
-        Me.Label7.Text = "---"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'm_lbRecievedData
         '
         Me.m_lbRecievedData.FormattingEnabled = True
@@ -366,16 +376,6 @@ Partial Class Form1
         Me.m_lbRecievedData.Name = "m_lbRecievedData"
         Me.m_lbRecievedData.Size = New System.Drawing.Size(244, 147)
         Me.m_lbRecievedData.TabIndex = 135
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(22, 108)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 13)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Numero"
         '
         'Form1
         '
