@@ -3,38 +3,40 @@ Imports System.Collections
 Public Class funciones
 
     Dim Ficha As String
-    Dim caja_estado As Boolean
+    Dim caja_estado As Boolean ' true = libre / false = ocupado
     Dim cp As Integer = 1
     Dim cn As Integer = 1
     Dim psp As Integer = 1
     Dim psn As Integer = 1
     Dim client As List(Of funciones)
-    Dim f As New funciones
+    'Dim f As New funciones
     Dim tiempo As Integer = CInt(Int((20 * Rnd()) + 1)) 'Crea ramdom para los tiempos
 
-    Sub Fichas(area As String, cliente As String) 'crea el tipo de ficha
+    Public Function Fichas(area As String, cliente As String) As String 'crea el tipo de ficha
 
         If (area = "Cajas" And cliente = "Preferencial") Then
-            Ficha = "CP - " + cp
+            Ficha = "CP - " + cp.ToString()
             cp += 1
         End If
 
         If (area = "Cajas" And cliente = "Normal") Then
-            Ficha = "CN - " + cn
+            Ficha = "CN - " + cn.ToString()
             cn += 1
         End If
 
         If (area = "Pataforma de Servicios" And cliente = "Preferencial") Then
-            Ficha = "PSP - " + psp
+            Ficha = "PSP - " + psp.ToString()
             psp += 1
         End If
 
         If (area = "Pataforma de Servicios" And cliente = "Normal") Then
-            Ficha = "PSN - " + psn
+            Ficha = "PSN - " + psn.ToString()
             psn += 1
         End If
 
-    End Sub
+        Return Ficha
+
+    End Function
 
     Sub cajas()
         If (caja_estado = True) Then

@@ -34,4 +34,9 @@
 
     End Sub
     
+    Private Sub btnsolicitar_Click(sender As Object, e As EventArgs) Handles btnsolicitar.Click
+        Dim fn As New funciones
+
+        Label7.Text = fn.Fichas(CBArea.SelectedItem.ToString(), CBcliente.SelectedItem.ToString())
+    End Sub
 End Class
