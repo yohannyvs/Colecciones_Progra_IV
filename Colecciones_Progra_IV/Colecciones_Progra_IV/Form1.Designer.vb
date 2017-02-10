@@ -52,7 +52,7 @@ Partial Class Form1
         Me.clientecaja1 = New System.Windows.Forms.PictureBox()
         Me.clientecaja2 = New System.Windows.Forms.PictureBox()
         Me.clientepataforma = New System.Windows.Forms.PictureBox()
-        Me.m_lbRecievedData = New System.Windows.Forms.ListBox()
+        Me.pantalla = New System.Windows.Forms.ListBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -316,6 +316,7 @@ Partial Class Form1
         Me.CBcliente.Name = "CBcliente"
         Me.CBcliente.Size = New System.Drawing.Size(140, 21)
         Me.CBcliente.TabIndex = 1
+        Me.CBcliente.Text = "---"
         '
         'CBArea
         '
@@ -325,6 +326,7 @@ Partial Class Form1
         Me.CBArea.Name = "CBArea"
         Me.CBArea.Size = New System.Drawing.Size(140, 21)
         Me.CBArea.TabIndex = 0
+        Me.CBArea.Text = "---"
         '
         'Label6
         '
@@ -373,13 +375,13 @@ Partial Class Form1
         Me.clientepataforma.TabIndex = 20
         Me.clientepataforma.TabStop = False
         '
-        'm_lbRecievedData
+        'pantalla
         '
-        Me.m_lbRecievedData.FormattingEnabled = True
-        Me.m_lbRecievedData.Location = New System.Drawing.Point(38, 233)
-        Me.m_lbRecievedData.Name = "m_lbRecievedData"
-        Me.m_lbRecievedData.Size = New System.Drawing.Size(244, 147)
-        Me.m_lbRecievedData.TabIndex = 135
+        Me.pantalla.FormattingEnabled = True
+        Me.pantalla.Location = New System.Drawing.Point(38, 233)
+        Me.pantalla.Name = "pantalla"
+        Me.pantalla.Size = New System.Drawing.Size(244, 147)
+        Me.pantalla.TabIndex = 135
         '
         'Label9
         '
@@ -435,7 +437,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.m_lbRecievedData)
+        Me.Controls.Add(Me.pantalla)
         Me.Controls.Add(Me.clientepataforma)
         Me.Controls.Add(Me.clientecaja2)
         Me.Controls.Add(Me.clientecaja1)
@@ -511,7 +513,7 @@ Partial Class Form1
     Friend WithEvents clientepataforma As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Private WithEvents m_lbRecievedData As System.Windows.Forms.ListBox
+    Private WithEvents pantalla As System.Windows.Forms.ListBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label

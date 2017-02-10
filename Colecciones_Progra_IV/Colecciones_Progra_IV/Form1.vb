@@ -33,10 +33,16 @@
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
 
     End Sub
-    
+
+    Dim fn As New funciones
+
     Private Sub btnsolicitar_Click(sender As Object, e As EventArgs) Handles btnsolicitar.Click
-        Dim fn As New funciones
 
         Label7.Text = fn.Fichas(CBArea.SelectedItem.ToString(), CBcliente.SelectedItem.ToString())
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        pantalla.Items.Add(fn.cajas())
     End Sub
 End Class
