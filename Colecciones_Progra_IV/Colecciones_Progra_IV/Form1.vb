@@ -40,9 +40,35 @@
 
         Label7.Text = fn.Fichas(CBArea.SelectedItem.ToString(), CBcliente.SelectedItem.ToString())
 
+
+
+
+
+
+
+
+
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         pantalla.Items.Add(fn.cajas())
+    End Sub
+
+   
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+   
+    Private Sub btnestadistica_Click(sender As Object, e As EventArgs) Handles btnestadistica.Click
+        Dim Form1 As New Estadisticas
+        Estadisticas.Show()
+        Me.Hide()
+
+
+
+
     End Sub
 End Class

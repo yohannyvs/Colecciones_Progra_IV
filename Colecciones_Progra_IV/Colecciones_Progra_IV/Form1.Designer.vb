@@ -23,14 +23,14 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.cliente8 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente7 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente3 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente4 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente5 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente6 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente2 = New System.Windows.Forms.PictureBox()
+        Me.pbcliente1 = New System.Windows.Forms.PictureBox()
         Me.CajaPreferencial = New System.Windows.Forms.PictureBox()
         Me.Caja1 = New System.Windows.Forms.PictureBox()
         Me.Caja2 = New System.Windows.Forms.PictureBox()
@@ -57,14 +57,15 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnestadistica = New System.Windows.Forms.Button()
+        CType(Me.cliente8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbcliente1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CajaPreferencial, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Caja1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Caja2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,80 +77,80 @@ Partial Class Form1
         CType(Me.clientepataforma, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'cliente8
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(385, 157)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.cliente8.BackColor = System.Drawing.Color.Navy
+        Me.cliente8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.cliente8.Location = New System.Drawing.Point(385, 157)
+        Me.cliente8.Name = "cliente8"
+        Me.cliente8.Size = New System.Drawing.Size(58, 50)
+        Me.cliente8.TabIndex = 0
+        Me.cliente8.TabStop = False
         '
-        'PictureBox2
+        'pbcliente7
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox2.Location = New System.Drawing.Point(385, 213)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.pbcliente7.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente7.Location = New System.Drawing.Point(385, 213)
+        Me.pbcliente7.Name = "pbcliente7"
+        Me.pbcliente7.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente7.TabIndex = 1
+        Me.pbcliente7.TabStop = False
         '
-        'PictureBox3
+        'pbcliente3
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(470, 157)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox3.TabIndex = 2
-        Me.PictureBox3.TabStop = False
+        Me.pbcliente3.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.pbcliente3.Location = New System.Drawing.Point(470, 157)
+        Me.pbcliente3.Name = "pbcliente3"
+        Me.pbcliente3.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente3.TabIndex = 2
+        Me.pbcliente3.TabStop = False
         '
-        'PictureBox4
+        'pbcliente4
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox4.Location = New System.Drawing.Point(470, 213)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox4.TabIndex = 3
-        Me.PictureBox4.TabStop = False
+        Me.pbcliente4.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente4.Location = New System.Drawing.Point(470, 213)
+        Me.pbcliente4.Name = "pbcliente4"
+        Me.pbcliente4.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente4.TabIndex = 3
+        Me.pbcliente4.TabStop = False
         '
-        'PictureBox5
+        'pbcliente5
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox5.Location = New System.Drawing.Point(385, 269)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox5.TabIndex = 4
-        Me.PictureBox5.TabStop = False
+        Me.pbcliente5.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente5.Location = New System.Drawing.Point(469, 269)
+        Me.pbcliente5.Name = "pbcliente5"
+        Me.pbcliente5.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente5.TabIndex = 4
+        Me.pbcliente5.TabStop = False
         '
-        'PictureBox6
+        'pbcliente6
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox6.Location = New System.Drawing.Point(470, 269)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox6.TabIndex = 5
-        Me.PictureBox6.TabStop = False
+        Me.pbcliente6.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente6.Location = New System.Drawing.Point(385, 269)
+        Me.pbcliente6.Name = "pbcliente6"
+        Me.pbcliente6.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente6.TabIndex = 5
+        Me.pbcliente6.TabStop = False
         '
-        'PictureBox7
+        'pbcliente2
         '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.PictureBox7.Location = New System.Drawing.Point(546, 255)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox7.TabIndex = 6
-        Me.PictureBox7.TabStop = False
+        Me.pbcliente2.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.pbcliente2.Location = New System.Drawing.Point(546, 255)
+        Me.pbcliente2.Name = "pbcliente2"
+        Me.pbcliente2.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente2.TabIndex = 6
+        Me.pbcliente2.TabStop = False
         '
-        'PictureBox8
+        'pbcliente1
         '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Navy
-        Me.PictureBox8.Location = New System.Drawing.Point(546, 184)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(58, 50)
-        Me.PictureBox8.TabIndex = 7
-        Me.PictureBox8.TabStop = False
+        Me.pbcliente1.BackColor = System.Drawing.Color.Navy
+        Me.pbcliente1.Location = New System.Drawing.Point(546, 184)
+        Me.pbcliente1.Name = "pbcliente1"
+        Me.pbcliente1.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente1.TabIndex = 7
+        Me.pbcliente1.TabStop = False
         '
         'CajaPreferencial
         '
@@ -426,6 +427,19 @@ Partial Class Form1
         Me.Label12.TabIndex = 139
         Me.Label12.Text = "Caja 1"
         '
+        'btnestadistica
+        '
+        Me.btnestadistica.BackColor = System.Drawing.Color.Transparent
+        Me.btnestadistica.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnestadistica.ForeColor = System.Drawing.Color.Maroon
+        Me.btnestadistica.Location = New System.Drawing.Point(1004, 483)
+        Me.btnestadistica.Name = "btnestadistica"
+        Me.btnestadistica.Size = New System.Drawing.Size(96, 23)
+        Me.btnestadistica.TabIndex = 140
+        Me.btnestadistica.Text = "Estadisticas"
+        Me.btnestadistica.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnestadistica.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
@@ -433,6 +447,7 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1108, 515)
+        Me.Controls.Add(Me.btnestadistica)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
@@ -451,26 +466,27 @@ Partial Class Form1
         Me.Controls.Add(Me.Caja2)
         Me.Controls.Add(Me.Caja1)
         Me.Controls.Add(Me.CajaPreferencial)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.pbcliente1)
+        Me.Controls.Add(Me.pbcliente2)
+        Me.Controls.Add(Me.pbcliente6)
+        Me.Controls.Add(Me.pbcliente5)
+        Me.Controls.Add(Me.pbcliente4)
+        Me.Controls.Add(Me.pbcliente3)
+        Me.Controls.Add(Me.pbcliente7)
+        Me.Controls.Add(Me.cliente8)
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "Form1"
         Me.Text = "Banco de las Americas"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cliente8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbcliente1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CajaPreferencial, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Caja1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Caja2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -485,14 +501,14 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents cliente8 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente7 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente3 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente4 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente5 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente6 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente2 As System.Windows.Forms.PictureBox
+    Friend WithEvents pbcliente1 As System.Windows.Forms.PictureBox
     Friend WithEvents CajaPreferencial As System.Windows.Forms.PictureBox
     Friend WithEvents Caja1 As System.Windows.Forms.PictureBox
     Friend WithEvents Caja2 As System.Windows.Forms.PictureBox
@@ -519,5 +535,6 @@ Partial Class Form1
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents btnestadistica As System.Windows.Forms.Button
 
 End Class
