@@ -42,26 +42,41 @@
 
 
 
-
-
-
-
-
-
-
     End Sub
+    
+
+
+    ' Public Shared Function ToBoolean(value As String) As Boolean
+    '    If Label7 Then
+    '        pbcliente1.Visible = True
+
+    '   End If
+    '  pbcliente1.Visible = False
+
+
+    'End Function
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         pantalla.Items.Add(fn.cajas())
     End Sub
 
-   
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        pbcliente4.Image = Image.FromFile(" C:\Users\Paola\Documents\GitHub\Colecciones_Progra_IV\Colecciones_Progra_IV\Colecciones_Progra_IV\imagenes\cliente1.jpg")
+        pbcliente2.Image = Image.FromFile(" C:\Users\Paola\Documents\GitHub\Colecciones_Progra_IV\Colecciones_Progra_IV\Colecciones_Progra_IV\imagenes\cliente2.jpg")
+        pbcliente3.Image = Image.FromFile(" C:\Users\Paola\Documents\GitHub\Colecciones_Progra_IV\Colecciones_Progra_IV\Colecciones_Progra_IV\imagenes\clienteesp1.jpg")
+        pbcliente1.Image = Image.FromFile(" C:\Users\Paola\Documents\GitHub\Colecciones_Progra_IV\Colecciones_Progra_IV\Colecciones_Progra_IV\imagenes\clienteesp2.jpg")
+
+
+        ' pbcliente1.Image = Image.FromFile("../../imagenes/cliente1jpg")
+        '  pbcliente1.Image = Image.FromFile(" C:\Users\Paola\Documents\GitHub\Colecciones_Progra_IV\Colecciones_Progra_IV\Colecciones_Progra_IV\imagenes\cliente1.jpg")
+        ' End If
+
 
     End Sub
 
-   
+
     Private Sub btnestadistica_Click(sender As Object, e As EventArgs) Handles btnestadistica.Click
         Dim Form1 As New Estadisticas
         Estadisticas.Show()

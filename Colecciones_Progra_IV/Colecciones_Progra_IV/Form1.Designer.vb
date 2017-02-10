@@ -84,6 +84,7 @@ Partial Class Form1
         Me.cliente8.Location = New System.Drawing.Point(385, 157)
         Me.cliente8.Name = "cliente8"
         Me.cliente8.Size = New System.Drawing.Size(58, 50)
+        Me.cliente8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.cliente8.TabIndex = 0
         Me.cliente8.TabStop = False
         '
@@ -93,6 +94,7 @@ Partial Class Form1
         Me.pbcliente7.Location = New System.Drawing.Point(385, 213)
         Me.pbcliente7.Name = "pbcliente7"
         Me.pbcliente7.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente7.TabIndex = 1
         Me.pbcliente7.TabStop = False
         '
@@ -103,6 +105,7 @@ Partial Class Form1
         Me.pbcliente3.Location = New System.Drawing.Point(470, 157)
         Me.pbcliente3.Name = "pbcliente3"
         Me.pbcliente3.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente3.TabIndex = 2
         Me.pbcliente3.TabStop = False
         '
@@ -112,6 +115,7 @@ Partial Class Form1
         Me.pbcliente4.Location = New System.Drawing.Point(470, 213)
         Me.pbcliente4.Name = "pbcliente4"
         Me.pbcliente4.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente4.TabIndex = 3
         Me.pbcliente4.TabStop = False
         '
@@ -121,6 +125,7 @@ Partial Class Form1
         Me.pbcliente5.Location = New System.Drawing.Point(469, 269)
         Me.pbcliente5.Name = "pbcliente5"
         Me.pbcliente5.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente5.TabIndex = 4
         Me.pbcliente5.TabStop = False
         '
@@ -130,6 +135,7 @@ Partial Class Form1
         Me.pbcliente6.Location = New System.Drawing.Point(385, 269)
         Me.pbcliente6.Name = "pbcliente6"
         Me.pbcliente6.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente6.TabIndex = 5
         Me.pbcliente6.TabStop = False
         '
@@ -140,6 +146,7 @@ Partial Class Form1
         Me.pbcliente2.Location = New System.Drawing.Point(546, 255)
         Me.pbcliente2.Name = "pbcliente2"
         Me.pbcliente2.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente2.TabIndex = 6
         Me.pbcliente2.TabStop = False
         '
@@ -149,6 +156,7 @@ Partial Class Form1
         Me.pbcliente1.Location = New System.Drawing.Point(546, 184)
         Me.pbcliente1.Name = "pbcliente1"
         Me.pbcliente1.Size = New System.Drawing.Size(58, 50)
+        Me.pbcliente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbcliente1.TabIndex = 7
         Me.pbcliente1.TabStop = False
         '
@@ -346,6 +354,7 @@ Partial Class Form1
         Me.clientecajapreferencia.Location = New System.Drawing.Point(901, 81)
         Me.clientecajapreferencia.Name = "clientecajapreferencia"
         Me.clientecajapreferencia.Size = New System.Drawing.Size(58, 50)
+        Me.clientecajapreferencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.clientecajapreferencia.TabIndex = 17
         Me.clientecajapreferencia.TabStop = False
         '
@@ -355,6 +364,7 @@ Partial Class Form1
         Me.clientecaja1.Location = New System.Drawing.Point(901, 184)
         Me.clientecaja1.Name = "clientecaja1"
         Me.clientecaja1.Size = New System.Drawing.Size(58, 50)
+        Me.clientecaja1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.clientecaja1.TabIndex = 18
         Me.clientecaja1.TabStop = False
         '
@@ -364,6 +374,7 @@ Partial Class Form1
         Me.clientecaja2.Location = New System.Drawing.Point(901, 300)
         Me.clientecaja2.Name = "clientecaja2"
         Me.clientecaja2.Size = New System.Drawing.Size(58, 50)
+        Me.clientecaja2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.clientecaja2.TabIndex = 19
         Me.clientecaja2.TabStop = False
         '
@@ -373,6 +384,7 @@ Partial Class Form1
         Me.clientepataforma.Location = New System.Drawing.Point(667, 383)
         Me.clientepataforma.Name = "clientepataforma"
         Me.clientepataforma.Size = New System.Drawing.Size(58, 50)
+        Me.clientepataforma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.clientepataforma.TabIndex = 20
         Me.clientepataforma.TabStop = False
         '
