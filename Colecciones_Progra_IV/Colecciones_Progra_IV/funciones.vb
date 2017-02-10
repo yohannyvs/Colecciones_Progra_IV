@@ -45,30 +45,36 @@ Public Class funciones
 
     Public Function cajas()
         caja_estado = True
+        Dim fic As String
 
-        'If (caja_estado = True) Then
-        For Each c As String In client
+        If (caja_estado = True) Then
+            For Each c As String In client
 
-            If c.StartsWith("CP") Then
-                Return c
-                client.Remove(c)
-            End If
+                If c.StartsWith("CP") Then
+                    fic = c
+                    client.Remove(c)
+                    Return fic
+                End If
 
-            If c.StartsWith("CN") Then
-                Return c
-            End If
+                If c.StartsWith("CN") Then
+                    fic = c
+                    client.Remove(c)
+                    Return c
+                End If
 
-            If c.StartsWith("PSN") Then
-                Return c
-            End If
+                If c.StartsWith("PSN") Then
+                    fic = c
+                    client.Remove(c)
+                    Return c
+                End If
 
-            If c.StartsWith("PSP") Then
-                Return c
-            End If
-        Next
-
-        caja_estado = False
-        'End If
+                If c.StartsWith("PSP") Then
+                    fic = c
+                    client.Remove(c)
+                    Return c
+                End If
+            Next
+        End If
     End Function
 
     Sub simulacion()
