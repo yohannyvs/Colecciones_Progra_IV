@@ -41,21 +41,7 @@ Public Class Form1
             mover_cliente(True, 4)
         End If
 
-        If lb_c1.BackColor = Color.Red Then
-            estado = False
-        End If
 
-        If lb_c2.BackColor = Color.Red Then
-            estado = True
-        End If
-
-        If lb_c3.BackColor = Color.Red Then
-            estado = True
-        End If
-
-        If lb_c4.BackColor = Color.Red Then
-            estado = True
-        End If
     End Sub
 
     Sub mover_cliente(est_caja As Boolean, num_caja As Integer)
@@ -63,11 +49,11 @@ Public Class Form1
             pantalla.Items.Add(fn.cajas(est_caja))
             list_pb(0).Location = New Point(545, 196)
             fn.mover(list_pb(0), num_caja)
+            bloquear_caja()
             list_pb.Add(list_pb(0))
-            'list_pb(0).Visible = False
-            Thread.Sleep(600)
-            list_pb(0).Location = New Point(list_pb(1).Location.X, list_pb(1).Location.Y)
-            list_pb(1).Location = New Point(545, 196)
+            Thread.Sleep(4000)
+            list_pb(0).Location = New Point(list_pb(1).Location.X, list_pb(1).Location.Y) 'Extrae la posicion del picturbox
+            list_pb(1).Location = New Point(545, 196) 'ingresa posicion para el picturebox
             list_pb.Remove(list_pb(0))
             
         Catch ex As Exception
@@ -75,8 +61,29 @@ Public Class Form1
         End Try
     End Sub
 
-    Sub pasar_caja()
+    Sub bloquear_caja()
+        Dim p1 As Point = New Point(list_pb(0).Location.X, list_pb(0).Location.Y)
+        Dim p2 As Point = New Point(895, 91)
+        Dim p3 As Point = New Point(895, 196)
+        Dim p4 As Point = New Point(895, 301)
+        Dim p5 As Point = New Point(664, 383)
 
+
+        If Point.Equals(p1, p2) = True Then
+            lb_c1.BackColor = Color.Red
+        End If
+
+        If Point.Equals(p1, p3) = True Then
+            lb_c2.BackColor = Color.Red
+        End If
+
+        If Point.Equals(p1, p4) = True Then
+            lb_c3.BackColor = Color.Red
+        End If
+
+        If Point.Equals(p1, p5) = True Then
+            lb_c4.BackColor = Color.Red
+        End If
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
