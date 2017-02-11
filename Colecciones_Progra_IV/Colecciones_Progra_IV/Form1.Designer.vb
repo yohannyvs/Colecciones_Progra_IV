@@ -23,7 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.cliente8 = New System.Windows.Forms.PictureBox()
         Me.pbcliente7 = New System.Windows.Forms.PictureBox()
         Me.pbcliente3 = New System.Windows.Forms.PictureBox()
         Me.pbcliente4 = New System.Windows.Forms.PictureBox()
@@ -48,17 +47,12 @@ Partial Class Form1
         Me.CBcliente = New System.Windows.Forms.ComboBox()
         Me.CBArea = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.clientecajapreferencia = New System.Windows.Forms.PictureBox()
-        Me.clientecaja1 = New System.Windows.Forms.PictureBox()
-        Me.clientecaja2 = New System.Windows.Forms.PictureBox()
-        Me.clientepataforma = New System.Windows.Forms.PictureBox()
         Me.pantalla = New System.Windows.Forms.ListBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.btnestadistica = New System.Windows.Forms.Button()
-        CType(Me.cliente8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,27 +65,12 @@ Partial Class Form1
         CType(Me.Caja2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CajaPlataforma, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.clientecajapreferencia, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.clientecaja1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.clientecaja2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.clientepataforma, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'cliente8
-        '
-        Me.cliente8.BackColor = System.Drawing.Color.Navy
-        Me.cliente8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.cliente8.Location = New System.Drawing.Point(385, 157)
-        Me.cliente8.Name = "cliente8"
-        Me.cliente8.Size = New System.Drawing.Size(58, 50)
-        Me.cliente8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.cliente8.TabIndex = 0
-        Me.cliente8.TabStop = False
         '
         'pbcliente7
         '
         Me.pbcliente7.BackColor = System.Drawing.Color.Navy
-        Me.pbcliente7.Location = New System.Drawing.Point(385, 213)
+        Me.pbcliente7.Location = New System.Drawing.Point(385, 140)
         Me.pbcliente7.Name = "pbcliente7"
         Me.pbcliente7.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -102,7 +81,7 @@ Partial Class Form1
         '
         Me.pbcliente3.BackColor = System.Drawing.Color.Navy
         Me.pbcliente3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.pbcliente3.Location = New System.Drawing.Point(470, 157)
+        Me.pbcliente3.Location = New System.Drawing.Point(469, 196)
         Me.pbcliente3.Name = "pbcliente3"
         Me.pbcliente3.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -112,7 +91,7 @@ Partial Class Form1
         'pbcliente4
         '
         Me.pbcliente4.BackColor = System.Drawing.Color.Navy
-        Me.pbcliente4.Location = New System.Drawing.Point(470, 213)
+        Me.pbcliente4.Location = New System.Drawing.Point(469, 252)
         Me.pbcliente4.Name = "pbcliente4"
         Me.pbcliente4.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -122,7 +101,7 @@ Partial Class Form1
         'pbcliente5
         '
         Me.pbcliente5.BackColor = System.Drawing.Color.Navy
-        Me.pbcliente5.Location = New System.Drawing.Point(469, 269)
+        Me.pbcliente5.Location = New System.Drawing.Point(385, 252)
         Me.pbcliente5.Name = "pbcliente5"
         Me.pbcliente5.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -132,7 +111,7 @@ Partial Class Form1
         'pbcliente6
         '
         Me.pbcliente6.BackColor = System.Drawing.Color.Navy
-        Me.pbcliente6.Location = New System.Drawing.Point(385, 269)
+        Me.pbcliente6.Location = New System.Drawing.Point(385, 196)
         Me.pbcliente6.Name = "pbcliente6"
         Me.pbcliente6.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -143,7 +122,7 @@ Partial Class Form1
         '
         Me.pbcliente2.BackColor = System.Drawing.Color.Navy
         Me.pbcliente2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.pbcliente2.Location = New System.Drawing.Point(546, 255)
+        Me.pbcliente2.Location = New System.Drawing.Point(469, 140)
         Me.pbcliente2.Name = "pbcliente2"
         Me.pbcliente2.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -153,7 +132,7 @@ Partial Class Form1
         'pbcliente1
         '
         Me.pbcliente1.BackColor = System.Drawing.Color.Navy
-        Me.pbcliente1.Location = New System.Drawing.Point(546, 184)
+        Me.pbcliente1.Location = New System.Drawing.Point(545, 196)
         Me.pbcliente1.Name = "pbcliente1"
         Me.pbcliente1.Size = New System.Drawing.Size(58, 50)
         Me.pbcliente1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -165,7 +144,7 @@ Partial Class Form1
         Me.CajaPreferencial.BackColor = System.Drawing.Color.Transparent
         Me.CajaPreferencial.BackgroundImage = CType(resources.GetObject("CajaPreferencial.BackgroundImage"), System.Drawing.Image)
         Me.CajaPreferencial.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CajaPreferencial.Location = New System.Drawing.Point(982, 81)
+        Me.CajaPreferencial.Location = New System.Drawing.Point(982, 93)
         Me.CajaPreferencial.Name = "CajaPreferencial"
         Me.CajaPreferencial.Size = New System.Drawing.Size(82, 50)
         Me.CajaPreferencial.TabIndex = 8
@@ -176,7 +155,7 @@ Partial Class Form1
         Me.Caja1.BackColor = System.Drawing.Color.Transparent
         Me.Caja1.BackgroundImage = CType(resources.GetObject("Caja1.BackgroundImage"), System.Drawing.Image)
         Me.Caja1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Caja1.Location = New System.Drawing.Point(982, 184)
+        Me.Caja1.Location = New System.Drawing.Point(982, 196)
         Me.Caja1.Name = "Caja1"
         Me.Caja1.Size = New System.Drawing.Size(82, 50)
         Me.Caja1.TabIndex = 9
@@ -348,46 +327,6 @@ Partial Class Form1
         Me.Label6.TabIndex = 16
         Me.Label6.Text = "Fichas"
         '
-        'clientecajapreferencia
-        '
-        Me.clientecajapreferencia.BackColor = System.Drawing.Color.Navy
-        Me.clientecajapreferencia.Location = New System.Drawing.Point(901, 81)
-        Me.clientecajapreferencia.Name = "clientecajapreferencia"
-        Me.clientecajapreferencia.Size = New System.Drawing.Size(58, 50)
-        Me.clientecajapreferencia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.clientecajapreferencia.TabIndex = 17
-        Me.clientecajapreferencia.TabStop = False
-        '
-        'clientecaja1
-        '
-        Me.clientecaja1.BackColor = System.Drawing.Color.Navy
-        Me.clientecaja1.Location = New System.Drawing.Point(901, 184)
-        Me.clientecaja1.Name = "clientecaja1"
-        Me.clientecaja1.Size = New System.Drawing.Size(58, 50)
-        Me.clientecaja1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.clientecaja1.TabIndex = 18
-        Me.clientecaja1.TabStop = False
-        '
-        'clientecaja2
-        '
-        Me.clientecaja2.BackColor = System.Drawing.Color.Navy
-        Me.clientecaja2.Location = New System.Drawing.Point(901, 300)
-        Me.clientecaja2.Name = "clientecaja2"
-        Me.clientecaja2.Size = New System.Drawing.Size(58, 50)
-        Me.clientecaja2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.clientecaja2.TabIndex = 19
-        Me.clientecaja2.TabStop = False
-        '
-        'clientepataforma
-        '
-        Me.clientepataforma.BackColor = System.Drawing.Color.Navy
-        Me.clientepataforma.Location = New System.Drawing.Point(667, 383)
-        Me.clientepataforma.Name = "clientepataforma"
-        Me.clientepataforma.Size = New System.Drawing.Size(58, 50)
-        Me.clientepataforma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.clientepataforma.TabIndex = 20
-        Me.clientepataforma.TabStop = False
-        '
         'pantalla
         '
         Me.pantalla.FormattingEnabled = True
@@ -401,7 +340,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(1058, 99)
+        Me.Label9.Location = New System.Drawing.Point(1058, 111)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(42, 13)
         Me.Label9.TabIndex = 136
@@ -412,7 +351,7 @@ Partial Class Form1
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(1058, 203)
+        Me.Label10.Location = New System.Drawing.Point(1058, 215)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(42, 13)
         Me.Label10.TabIndex = 137
@@ -465,10 +404,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.pantalla)
-        Me.Controls.Add(Me.clientepataforma)
-        Me.Controls.Add(Me.clientecaja2)
-        Me.Controls.Add(Me.clientecaja1)
-        Me.Controls.Add(Me.clientecajapreferencia)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
@@ -485,13 +420,11 @@ Partial Class Form1
         Me.Controls.Add(Me.pbcliente4)
         Me.Controls.Add(Me.pbcliente3)
         Me.Controls.Add(Me.pbcliente7)
-        Me.Controls.Add(Me.cliente8)
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "Form1"
         Me.Text = "Banco de las Americas"
-        CType(Me.cliente8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -505,15 +438,10 @@ Partial Class Form1
         CType(Me.CajaPlataforma, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.clientecajapreferencia, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.clientecaja1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.clientecaja2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.clientepataforma, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents cliente8 As System.Windows.Forms.PictureBox
     Friend WithEvents pbcliente7 As System.Windows.Forms.PictureBox
     Friend WithEvents pbcliente3 As System.Windows.Forms.PictureBox
     Friend WithEvents pbcliente4 As System.Windows.Forms.PictureBox
@@ -535,10 +463,6 @@ Partial Class Form1
     Friend WithEvents CBcliente As System.Windows.Forms.ComboBox
     Friend WithEvents CBArea As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents clientecajapreferencia As System.Windows.Forms.PictureBox
-    Friend WithEvents clientecaja1 As System.Windows.Forms.PictureBox
-    Friend WithEvents clientecaja2 As System.Windows.Forms.PictureBox
-    Friend WithEvents clientepataforma As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Private WithEvents pantalla As System.Windows.Forms.ListBox
