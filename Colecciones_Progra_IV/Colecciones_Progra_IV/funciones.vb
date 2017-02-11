@@ -37,7 +37,6 @@ Public Class funciones
             psn += 1
         End If
 
-        'client.Add(Ficha)
         Return Ficha
 
 
@@ -54,16 +53,24 @@ Public Class funciones
                     fic = c
                     client.Remove(c)
                     Return fic
+                End If
+            Next
 
-                ElseIf c.StartsWith("PSP") Then
+            For Each c As String In client
+
+                If c.StartsWith("PSP") Then
                     fic = c
                     client.Remove(c)
-                    Return c
+                    Return fic
+                End If
+            Next
 
-                ElseIf c.StartsWith("PSN") Or c.StartsWith("CN") Then
+            For Each c As String In client
+
+                If c.StartsWith("PSN") Or c.StartsWith("CN") Then
                     fic = c
                     client.Remove(c)
-                    Return c
+                    Return fic
                 End If
             Next
         End If
@@ -83,7 +90,6 @@ Public Class funciones
         If caja = 2 Then
             While (count <= 68)
                 client.Location = New Point(client.Location.X + 10, client.Location.Y)
-                'client.Location = New Point(client.Location.X, client.Location.Y - 3)
                 count += 2
                 Threading.Thread.Sleep(50)
             End While

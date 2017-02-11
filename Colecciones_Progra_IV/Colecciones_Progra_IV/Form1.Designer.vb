@@ -22,6 +22,7 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.pbcliente7 = New System.Windows.Forms.PictureBox()
         Me.pbcliente3 = New System.Windows.Forms.PictureBox()
@@ -48,11 +49,12 @@ Partial Class Form1
         Me.CBArea = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.pantalla = New System.Windows.Forms.ListBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lb_c1 = New System.Windows.Forms.Label()
+        Me.lb_c2 = New System.Windows.Forms.Label()
+        Me.lb_c3 = New System.Windows.Forms.Label()
+        Me.lb_c4 = New System.Windows.Forms.Label()
         Me.btnestadistica = New System.Windows.Forms.Button()
+        Me.t1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -335,48 +337,48 @@ Partial Class Form1
         Me.pantalla.Size = New System.Drawing.Size(244, 147)
         Me.pantalla.TabIndex = 135
         '
-        'Label9
+        'lb_c1
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(1058, 111)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(42, 13)
-        Me.Label9.TabIndex = 136
-        Me.Label9.Text = "Caja 1"
+        Me.lb_c1.AutoSize = True
+        Me.lb_c1.BackColor = System.Drawing.Color.Green
+        Me.lb_c1.ForeColor = System.Drawing.Color.Black
+        Me.lb_c1.Location = New System.Drawing.Point(1025, 77)
+        Me.lb_c1.Name = "lb_c1"
+        Me.lb_c1.Size = New System.Drawing.Size(42, 13)
+        Me.lb_c1.TabIndex = 136
+        Me.lb_c1.Text = "Caja 1"
         '
-        'Label10
+        'lb_c2
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(1058, 215)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(42, 13)
-        Me.Label10.TabIndex = 137
-        Me.Label10.Text = "Caja 2"
+        Me.lb_c2.AutoSize = True
+        Me.lb_c2.BackColor = System.Drawing.Color.Green
+        Me.lb_c2.ForeColor = System.Drawing.Color.Black
+        Me.lb_c2.Location = New System.Drawing.Point(1025, 181)
+        Me.lb_c2.Name = "lb_c2"
+        Me.lb_c2.Size = New System.Drawing.Size(42, 13)
+        Me.lb_c2.TabIndex = 137
+        Me.lb_c2.Text = "Caja 2"
         '
-        'Label11
+        'lb_c3
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(1058, 318)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(39, 13)
-        Me.Label11.TabIndex = 138
-        Me.Label11.Text = "Caja3"
+        Me.lb_c3.AutoSize = True
+        Me.lb_c3.BackColor = System.Drawing.Color.Green
+        Me.lb_c3.ForeColor = System.Drawing.Color.Black
+        Me.lb_c3.Location = New System.Drawing.Point(1025, 284)
+        Me.lb_c3.Name = "lb_c3"
+        Me.lb_c3.Size = New System.Drawing.Size(39, 13)
+        Me.lb_c3.TabIndex = 138
+        Me.lb_c3.Text = "Caja3"
         '
-        'Label12
+        'lb_c4
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Location = New System.Drawing.Point(683, 493)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(42, 13)
-        Me.Label12.TabIndex = 139
-        Me.Label12.Text = "Caja 1"
+        Me.lb_c4.AutoSize = True
+        Me.lb_c4.BackColor = System.Drawing.Color.Transparent
+        Me.lb_c4.Location = New System.Drawing.Point(683, 493)
+        Me.lb_c4.Name = "lb_c4"
+        Me.lb_c4.Size = New System.Drawing.Size(42, 13)
+        Me.lb_c4.TabIndex = 139
+        Me.lb_c4.Text = "Caja 1"
         '
         'btnestadistica
         '
@@ -399,10 +401,10 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1108, 515)
         Me.Controls.Add(Me.btnestadistica)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.lb_c4)
+        Me.Controls.Add(Me.lb_c3)
+        Me.Controls.Add(Me.lb_c2)
+        Me.Controls.Add(Me.lb_c1)
         Me.Controls.Add(Me.pantalla)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.GroupBox1)
@@ -467,10 +469,11 @@ Partial Class Form1
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Private WithEvents pantalla As System.Windows.Forms.ListBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents lb_c1 As System.Windows.Forms.Label
+    Friend WithEvents lb_c2 As System.Windows.Forms.Label
+    Friend WithEvents lb_c3 As System.Windows.Forms.Label
+    Friend WithEvents lb_c4 As System.Windows.Forms.Label
     Friend WithEvents btnestadistica As System.Windows.Forms.Button
+    Friend WithEvents t1 As System.Windows.Forms.Timer
 
 End Class
