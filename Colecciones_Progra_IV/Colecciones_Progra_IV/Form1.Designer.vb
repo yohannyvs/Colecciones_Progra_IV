@@ -55,6 +55,9 @@ Partial Class Form1
         Me.lb_c4 = New System.Windows.Forms.Label()
         Me.btnestadistica = New System.Windows.Forms.Button()
         Me.t1 = New System.Windows.Forms.Timer(Me.components)
+        Me.t2 = New System.Windows.Forms.Timer(Me.components)
+        Me.t3 = New System.Windows.Forms.Timer(Me.components)
+        Me.t4 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.pbcliente7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbcliente4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -373,7 +376,7 @@ Partial Class Form1
         'lb_c4
         '
         Me.lb_c4.AutoSize = True
-        Me.lb_c4.BackColor = System.Drawing.Color.Transparent
+        Me.lb_c4.BackColor = System.Drawing.Color.Green
         Me.lb_c4.Location = New System.Drawing.Point(683, 493)
         Me.lb_c4.Name = "lb_c4"
         Me.lb_c4.Size = New System.Drawing.Size(42, 13)
@@ -475,5 +478,8 @@ Partial Class Form1
     Friend WithEvents lb_c4 As System.Windows.Forms.Label
     Friend WithEvents btnestadistica As System.Windows.Forms.Button
     Friend WithEvents t1 As System.Windows.Forms.Timer
+    Friend WithEvents t2 As System.Windows.Forms.Timer
+    Friend WithEvents t3 As System.Windows.Forms.Timer
+    Friend WithEvents t4 As System.Windows.Forms.Timer
 
 End Class

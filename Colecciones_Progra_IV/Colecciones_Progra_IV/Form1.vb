@@ -23,6 +23,10 @@ Public Class Form1
     End Sub
 
     Sub est_caja()
+        Dim v1 As Integer = CInt(Int((20 * Rnd()) + 1)) 'Crea ramdom para los tiempos
+        Dim v2 As Integer = CInt(Int((20 * Rnd()) + 1)) 'Crea ramdom para los tiempos
+        Dim v3 As Integer = CInt(Int((20 * Rnd()) + 1)) 'Crea ramdom para los tiempos
+        Dim v4 As Integer = CInt(Int((20 * Rnd()) + 1)) 'Crea ramdom para los tiempos
 
         If lb_c1.BackColor = Color.Green Then
             mover_cliente(True, 1)
@@ -31,7 +35,7 @@ Public Class Form1
             mover_cliente(True, 2)
 
         ElseIf lb_c3.BackColor = Color.Green Then
-            mover_cliente(True,3)
+            mover_cliente(True, 3)
 
         ElseIf lb_c4.BackColor = Color.Green Then
             mover_cliente(True, 4)
@@ -39,22 +43,18 @@ Public Class Form1
 
         If lb_c1.BackColor = Color.Red Then
             estado = False
-            c = 1
         End If
 
         If lb_c2.BackColor = Color.Red Then
-            estado = False
-            c = 2
+            estado = True
         End If
 
         If lb_c3.BackColor = Color.Red Then
-            estado = False
-            c = 3
+            estado = True
         End If
 
         If lb_c4.BackColor = Color.Red Then
-            estado = False
-            c = 4
+            estado = True
         End If
     End Sub
 
@@ -64,10 +64,12 @@ Public Class Form1
             list_pb(0).Location = New Point(545, 196)
             fn.mover(list_pb(0), num_caja)
             list_pb.Add(list_pb(0))
-            list_pb(0).Visible = False
+            'list_pb(0).Visible = False
             Thread.Sleep(600)
+            list_pb(0).Location = New Point(list_pb(1).Location.X, list_pb(1).Location.Y)
+            list_pb(1).Location = New Point(545, 196)
             list_pb.Remove(list_pb(0))
-            lb_c1.BackColor = Color.Red
+            
         Catch ex As Exception
             MessageBox.Show("No hay clientes en espera")
         End Try
